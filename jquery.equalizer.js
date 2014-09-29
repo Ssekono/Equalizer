@@ -1,7 +1,7 @@
 $(document).ready( function() {
 
 	//Selector parent element required
-	equalizeHeight('.view-practices .item-list > ul');
+	equalizeHeight('.equalize');
 
 	function equalizeHeight(element) {
 		//Get children of parent element
