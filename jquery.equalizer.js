@@ -6,6 +6,10 @@ $(document).ready( function() {
 	function equalizeHeight(element) {
 		//Get children of parent element
 		var childElements = $(element).children();
+		//Reset child elements' height
+		for (var i = 0; i < childElements.length; i++) {
+			$(childElements[i]).css('height', 'auto');
+		};
 		//Get greatest height of all child elements
 		var maxHeight = 0;
 		for (var i = 0; i < childElements.length; i++) {
